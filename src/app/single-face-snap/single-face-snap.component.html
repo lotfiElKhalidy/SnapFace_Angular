@@ -1,0 +1,13 @@
+<div class="face-snap-card snapped" [ngClass]="{ snapped: buttonText === 'Oops, unSnap !'}">
+    <button routerLink="/facesnaps">Back</button>
+    <h2>{{ faceSnap.title | uppercase }}</h2>
+    <p>Photo mise en ligne {{ faceSnap.createdDate | date: 'le dd/MM/mm à HH:mm' }}</p>
+    <!--img src="{{ faceSnap.imageUrl }}" alt="blabla"-->
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p *ngIf="faceSnap.location">Photo prise à : {{ faceSnap.location }}</p>
+    <p>
+        <button (click)="onSnap()">{{ buttonText }}</button>
+        <span [ngStyle]="{color: 'rgb(0,' + faceSnap.snaps +', 0)'}">👍 {{ faceSnap.snaps }}</span>
+    </p>
+</div>
