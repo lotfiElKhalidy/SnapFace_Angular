@@ -2,9 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
-## Development server
+## Frontend
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The frontend of the application will automatically reload if you change any of the source files.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Backend
+Run `cd SnapFace_Angular/backend` on your terminal, then run `npm install` to install independancies.
+Run `npm run start` to start the backend. Navigate to `http://localhost:3000/`.
 
 ## Code scaffolding
 
