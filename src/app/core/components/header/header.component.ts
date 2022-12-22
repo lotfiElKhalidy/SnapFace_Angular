@@ -13,7 +13,6 @@ export class HeaderComponent {
   }
 
   OnAddNewFaceSnap(): void {
-    this.router.navigateByUrl('/create');
+    this.router.navigateByUrl('facesnaps/create');
   }
-
 }

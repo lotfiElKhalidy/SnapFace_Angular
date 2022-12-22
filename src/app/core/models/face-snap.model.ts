@@ -5,6 +5,5 @@ export class FaceSnap {
     imageUrl!: string;
     createdDate!: Date;
     snaps!: number;
-    location?: String;
-    
+    location?: String; 
 }

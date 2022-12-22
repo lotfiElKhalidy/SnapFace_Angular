@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-  userEmail: string = "name@example.com";
 
   constructor(private router: Router) {}
 
@@ -16,7 +14,4 @@ export class LandingPageComponent {
     this.router.navigateByUrl('facesnaps');
   }
 
-  OnSubmitForm(form: NgForm):void {
-    console.log(form.value);
-  }
 }
